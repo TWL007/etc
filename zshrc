@@ -1,5 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -60,16 +62,29 @@ ZSH_THEME="fishy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+  adb
+  archlinux
+  brew
+  django
   docker-compose
   docker-machine
   docker
-  go
-  brew
+  firewalld
+  golang
+  git
   git-extras
+  history
+  iterm2
+  kubectl
+  man
+  nmap
   osx
   pip
   python
+  postgres
+  rsync
+  systemadmin
+  systemd
   tmux
   zsh-autosuggestions
   zsh-syntax-highlighting
