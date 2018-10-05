@@ -2,6 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+alias  ss-mac="lsof -n -P -i TCP -s TCP:LISTEN"
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -62,14 +63,13 @@ ZSH_THEME="fishy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  adb
-  archlinux
-  brew
+#  adb
+#  archlinux
   django
-  docker-compose
-  docker-machine
-  docker
-  firewalld
+#  docker-compose
+#  docker-machine
+#  docker
+#  firewalld
   golang
   git
   git-extras
@@ -81,10 +81,10 @@ plugins=(
   osx
   pip
   python
-  postgres
+#  postgres
   rsync
-  systemadmin
-  systemd
+#  systemadmin
+#  systemd
   tmux
   zsh-autosuggestions
   zsh-syntax-highlighting
