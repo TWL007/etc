@@ -85,7 +85,7 @@ plugins=(
   rsync
 #  systemadmin
 #  systemd
-  tmux
+#  tmux
   zsh-autosuggestions
   zsh-syntax-highlighting
   zsh-completions
