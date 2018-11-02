@@ -573,20 +573,23 @@ source ~/.etc/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # 命令别名 {{{
 # alias and listing colors
-alias -g A="|awk"
-alias -g B='|sed -r "s:\x1B\[[0-9;]*[mK]::g"'       # remove color, make things boring
-alias -g C="|wc"
-alias -g E="|sed"
-alias -g G='|GREP_COLOR=$(echo 3$[$(date +%N)%6+1]'\'';1;7'\'') egrep -i --color=always'
-alias -g H="|head -n $(($LINES-2))"
-alias -g L="|less"
-alias -g P="|column -t"
-alias -g R="|tac"
-alias -g S="|sort"
-alias -g T="|tail -n $(($LINES-2))"
-alias -g X="|xargs"
-alias -g N="> /dev/null"
-alias -g NF="./*(oc[1])"      # last modified(inode time) file or directory
+#alias -g A="|awk"
+#alias -g B='|sed -r "s:\x1B\[[0-9;]*[mK]::g"'       # remove color, make things boring
+#alias -g C="|wc"
+#alias -g E="|sed"
+#alias -g G='|GREP_COLOR=$(echo 3$[$(date +%N)%6+1]'\'';1;7'\'') egrep -i --color=always'
+#alias -g H="|head -n $(($LINES-2))"
+#alias -g L="|less"
+#alias -g P="|column -t"
+#alias -g R="|tac"
+#alias -g S="|sort"
+#alias -g T="|tail -n $(($LINES-2))"
+#alias -g X="|xargs"
+#alias -g N="> /dev/null"
+#alias -g NF="./*(oc[1])"      # last modified(inode time) file or directory
+
+alias dnf="sudo dnf"
+alias yum="sudo yum"
 
 # tmux or screen ?
 (bin-exist tmux) && alias s=tmux || alias s=screen
