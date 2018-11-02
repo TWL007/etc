@@ -568,6 +568,7 @@ export READNULLCMD=less
 #   置于PATH最前以便下面的配置所调用的命令是linux的版本
 [[ -f $HOME/.zshrc.$HOST ]] && source $HOME/.zshrc.$HOST
 [[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
+source ~/.etc/zsh-autosuggestions/zsh-autosuggestions.zsh
 # }}}
 
 # 命令别名 {{{
