@@ -346,7 +346,7 @@ fi
 local user="$pB%(!:$pfg_red:$pfg_green)%n$pR"       #different color for privileged sessions
 local symbol="$pB%(!:$pfg_red# :$pfg_yellow> )$pR"
 local job="%1(j,$pfg_red:$pfg_blue%j,)$pR"
-PROMPT='$user$pfg_yellow@$pR$host$(get_prompt_git)$job$symbol'
+PROMPT='%c$(get_prompt_git)$job$symbol'
 PROMPT2="$PROMPT$pfg_cyan%_$pR $pB$pfg_black>$pR$pfg_green>$pB$pfg_green>$pR "
 #NOTE  **DO NOT** use double quote , it does not work
 typeset -A altchar
@@ -356,7 +356,7 @@ PR_SHIFT_IN="%{$terminfo[smacs]%}"
 PR_SHIFT_OUT="%{$terminfo[rmacs]%}"
 #PR_RSEP=$PR_SET_CHARSET$PR_SHIFT_IN${altchar[\`]:-|}$PR_SHIFT_OUT
 local prompt_time="%(?:$pfg_green:$pfg_red)%*$pR"
-RPROMPT='$__PROMPT_PWD $prompt_time'
+RPROMPT='$__PROMPT_PWD $user$pfg_yellow@$pR$host $prompt_time'
 
 # SPROMPT - the spelling prompt
 SPROMPT="${pfg_yellow}zsh$pR: correct '$pfg_red$pB%R$pR' to '$pfg_green$pB%r$pR' ? ([${pfg_cyan}Y$pR]es/[${pfg_cyan}N$pR]o/[${pfg_cyan}E$pR]dit/[${pfg_cyan}A$pR]bort) "
