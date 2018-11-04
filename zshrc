@@ -346,7 +346,7 @@ else
     local host="$pB$pfg_red%m$pR"
 fi
 local user="$pB%(!:$pfg_red:$pfg_green)%n$pR"       #different color for privileged sessions
-local symbol="$pB%(!:$pfg_red# :$pfg_yellow> )$pR"
+local symbol="$pB%(!:$pfg_red# :$pfg_green> )$pR"
 local job="%1(j,$pfg_red:$pfg_blue%j,)$pR"
 PROMPT='%~ $(get_prompt_git)$job$symbol'
 PROMPT2="$PROMPT$pfg_cyan%_$pR $pB$pfg_black>$pR$pfg_green>$pB$pfg_green>$pR "
