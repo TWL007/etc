@@ -246,7 +246,8 @@ get_prompt_git() {
         esac
         [[ $__CURRENT_GIT_BRANCH_IS_DIRTY = '1' ]] && s+="*"
         #echo " $pfg_black$pbg_white$pB $s $pR" 
-        echo " $pfg_black$pB $s $pR" 
+        #echo " $pfg_black$pB $s $pR" 
+        echo "$pfg_red($s)" 
     fi
 }
 #}}}
