@@ -1,6 +1,13 @@
 #!/bin/zsh
 # vim:fdm=marker
-
+export LANG="en_US.UTF-8"
+export LC_COLLATE="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+export LC_MESSAGES="en_US.UTF-8"
+export LC_MONETARY="en_US.UTF-8"
+export LC_NUMERIC="en_US.UTF-8"
+export LC_TIME="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
 # 预配置 {{{
 # 如果不是交互shell就直接结束 (unix power tool, 2.11)
 #if [[  "$-" != *i* ]]; then return 0; fi
@@ -612,7 +619,7 @@ alias grep='grep -I --color=auto'
 alias egrep='egrep -I --color=auto'
 alias cal='cal -3'
 alias freeze='kill -STOP'
-alias ls=$'ls -h --color=auto -X --time-style="+\e[33m[\e[32m%Y-%m-%d \e[35m%k:%M\e[33m]\e[m"'
+#alias ls=$'ls -h --color=auto -X --time-style="+\e[33m[\e[32m%Y-%m-%d \e[35m%k:%M\e[33m]\e[m"'
 alias vi='vim'
 alias ll='ls -l'
 alias df='df -Th'
