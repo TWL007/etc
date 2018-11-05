@@ -619,9 +619,15 @@ alias grep='grep -I --color=auto'
 alias egrep='egrep -I --color=auto'
 alias cal='cal -3'
 alias freeze='kill -STOP'
-#alias ls=$'ls -h --color=auto -X --time-style="+\e[33m[\e[32m%Y-%m-%d \e[35m%k:%M\e[33m]\e[m"'
+if [ "$(uname)" == "Darwin" ];
+then
+    alias ls=$'ls -h -G'
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ];
+then
+    alias ls=$'ls -h --"color=auto -X --time-style="+\e[33m[\e[32m%Y-%m-%d \e[35m%k:%M\e[33m]\e[m"'
+fi
 alias vi='vim'
-alias ll='ls -l'
+alias ll='ls -la'
 alias df='df -Th'
 alias du='du -h'
 #show directories size
