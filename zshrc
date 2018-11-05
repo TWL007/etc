@@ -624,7 +624,7 @@ then
     alias ls=$'ls -h -G'
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ];
 then
-    alias ls=$'ls -h --"color=auto -X --time-style="+\e[33m[\e[32m%Y-%m-%d \e[35m%k:%M\e[33m]\e[m"'
+    alias ls=$'ls -h --color=auto -X --time-style="+\e[33m[\e[32m%Y-%m-%d \e[35m%k:%M\e[33m]\e[m"'
 fi
 alias vi='vim'
 alias ll='ls -la'
