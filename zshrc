@@ -602,7 +602,7 @@ alias dnf="sudo dnf"
 alias yum="sudo yum"
 
 # tmux or screen ?
-(bin-exist tmux) && alias s=tmux || alias s=screen
+#(bin-exist tmux) && alias s=tmux || alias s=screen
 
 #file types
 (bin-exist apvlv) && alias -s pdf=apvlv
