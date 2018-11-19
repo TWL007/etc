@@ -8,6 +8,7 @@ export LC_MONETARY="en_US.UTF-8"
 export LC_NUMERIC="en_US.UTF-8"
 export LC_TIME="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
+source <(kubectl completion zsh)
 # 预配置 {{{
 # 如果不是交互shell就直接结束 (unix power tool, 2.11)
 #if [[  "$-" != *i* ]]; then return 0; fi
